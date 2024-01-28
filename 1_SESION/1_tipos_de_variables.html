@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIPOS DE VARIABLES</title>
+</head>
+<body>
+    <script>
+        // declaracion simple de variable
+        let miVariable;
+        var miVariable_2;
+        // desde el año 2015 se utiliza "let" en sustución de "var", en fecha 2023-24 conviven
+        // 2 juntas, pero "var" puede ser en cualquier momento "deprecated", es decir...
+        //que deje de funcionar.
+        //IMPORTANTE: si queremos programar para navegadores antiguos, tendremos que utilizar
+        //"var" en lugar de "let" para asegurarnos que nuestro código funcione.
+
+        // variable alfanumerica con asignación de valor
+        let miNombre = "Joselito Gutierrez";
+        // el valor es una cadena de carácteres
+
+        // EJERCICIO:
+        // -  Abrir este archivo en el navegador
+        // -  En la consola de la herramienta para desarrolladores colocar el siguiente comando
+        //    miNombre[4], ¿que letra os sale?. Podéis cambiar el 4 por cualquier numero y os
+        //    mostrará la posición dentro de la cadena de carácteres.
+
+        // variable alfanumerica con asignación de valor
+        let miEdad = "45"
+        // RECUERDA! El valor es una cadena de carácteres, no podrás realizar operaciones numéricas
+        // con este valor ya que lo toma como cadena de carácteres.
+
+        // variable alfanumerica con asignación de valor numerico
+        miEdad = 156;
+        valor_1 = 67 + 234;
+        valor_2 = 67 * 264;
+        valor_3 = 67 / 264;
+        valor_4 = 67 - 264;
+        // RECUERDA! con este valor ya puedes realizar operaciones matemáticas.
+
+        // EJERCICIO: 
+        //  - descubre los valores de las variables de arriba en la consola para desarrolladores!
+        
+        // variable constante
+        const miTrabajo = "banderillero"
+        // esta variable mantendrá el valor "banderillero" durante todo el código. !no se puede cambiar!
+        // ideal para crear constantes donde no podamos cometer el fallo de cambiarla por equivocación.
+        // ideal para constantes como Pi, velocidades, densidades, fuerza de la gravedad, sueldo, etc...
+
+        // variables booleanas
+        let valor_b1 = true;
+        let valor_b2 = false;
+        let valor_b3 = 5>4;
+        let valor_b4 = 4>5;
+        // las variables booleanas nos entregan un valor "verdadero" o "falso", es decir... un
+        // valor binario, o "0" o "1".
+
+        // EJERCICIO:
+        // -    Descubre en la consola el valor de "valor_b3" y el valor de "valor_b4"
+        //      Es lo mismo?, es otra forma de declarar un valor booleano, insertando condiciones
+        //      verdaderas o falsas.
+        
+        // variables con array (cadenas)
+        let array_1 = ["Adefesio","repugnante","seco","mustio"]
+        // son variables que contienen cadenas de caracteres y se le otorga a cada elemento
+        // una posición
+
+        //EJERCICIO:
+        // -    Prueba en la consola de desarrolladores los siguientes valores
+        //      array_1 
+        //      Te mostrará un valor array, es decir te dirá el numero de elementos y cuales son
+        //      array_1[1]
+        //      Te mostrará el valor de la posición número 1 en el array... y es?
+        
+        // variables con array compuestas o complejas
+        let array_2 = ["Adefesio","repugnante","seco","mustio",["agrio","pesado","indigesto"]]
+        // en esta variable hemos colocado 2 cadenas de carácteres e incluso podríamos colocar
+        // infinitas cadenas dentro de otras cadenas...
+
+        //EJERCICIO:
+        // -    Prueba en la consola de desarrolladores los siguientes valores
+        //      array_2 
+        //      Te mostrará un valor array, es decir te dirá el numero de elementos y cuales son
+        //      además te mostrará los datos del segundo array...
+        //      array_4[0]
+        //      Te mostrará el valor de la posición número 0 en el array... y es?
+
+        //IMPORTANTE!!!, más adelante veremos que también podemos asignar a una variable, por
+        // ejemplo... una función... o un objeto... o un valor NULL... o un valor UNDEFINED...
+        // pero eso ya lo contaremos en otra ocasión.
+        
+    </script>
+
+
+</body>
+</html>

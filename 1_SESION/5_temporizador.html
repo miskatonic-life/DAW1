@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05- temporizador JS</title>
+</head>
+<body style="background-color: black;color: white;font-size: 4em;text-align: center;
+margin-top: 100px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;
+">
+    <p>introduce los segundos...</p>
+    <input type="number" id="tiempoElegido" style="font-size: 1em;
+    text-align: center;font-weight: bold;">
+    <!-- //IMPORTANTE!: fijaros que el "type" de este "input" es de tipo "number" -->
+    <button onclick="comenzarTiempo()" style="font-size: 1em;font-weight: bold;">iniciar</button>
+    <!-- al hacer click comenzará la función "comenzarTiempo" -->
+    <h1 style="color: red;" id="textoAlarma">APAGADO</h1>
+
+    <script>
+
+        let elementosSegudos = document.getElementById("tiempoElegido");
+        //declaramos la variable "elementosSegundos" para que nos coja el elemento con id
+        // "tiempoElegido"
+        let elementoTextoAlarma = document.getElementById("textoAlarma");
+        //declaramos la variable "elementoTextoAlarma" para que nos coja el elemento con
+        // id "textoAlarma"
+
+        function comenzarTiempo(){
+          setTimeout(tiempoCumplido, 1000 * elementosSegudos.value);
+        //   esta es la función a la que hemos llamado una vez que hemos hecho click en el botón
+        //   y... IMPORTANTE! la función "setTimeout" es propia de javaScript y se le dan como
+        //   minimo 2 parametros, una función que realizar una vez transcurrido el tiempo y el
+        //   tiempo que deseamos que pase hasta que se ejecute la función. En este caso, pasado
+        //   el tiempo elegido, ejecutará la función "tiempoCumplido"
+        }
+
+        function tiempoCumplido(){
+            elementoTextoAlarma.textContent = "ENCENDIDO";
+            elementoTextoAlarma.style.color = "green";
+            //volvemos elementosSegundos al valor "0"
+            elementosSegudos.value = 0;
+            //la función "tiempoCumplido" cambiará el texto de "APAGADO" a "ENCENDIDO" y...
+            //IMPORTANTE: el elemento "textoAlarma" será cambiado al color verde gracias
+            // al atributo "style" y al atributo "color".
+        }
+
+    </script>
+    
+</body>
+</html>
