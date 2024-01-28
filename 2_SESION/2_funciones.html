@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones_2</title>
+</head>
+<body>
+<!-- EN ESTE CODIGO EMPEZAMOS A VER EL COMPORTAMIENTO ABSTRACTO DE LAS FUNCIONES -->
+  <!-- ¡¡ PODEMOS LLAMAR A FUNCIONES DESDE OTRAS FUNCIONES!!!  -->
+<!-- PASO 1 llamamos a la funcion mostrarResultado -->
+   <button onclick="mostrarResultado()">mostrar resultado</button>
+
+   <script>
+    //  PASO 2 / llegamos a la funcion mostrarResultado
+        function mostrarResultado() {
+    // PASO 3 / declaramos la variable resultado y le damos el valor
+    // de la función sumar, llamando a la funcion sumar un poco más abajo
+        let resultado = sumar();
+    // PASO 5 / con el valor enviado desde abajo en sumar, lo ha pasado a
+    // resultado y lo muestra en un alert.
+        alert(resultado);
+    }
+    // PASO 4 / ejecuta la funcion sumar y guarda el resultado en el valor sumar
+function sumar() {
+    
+        sumar = 15 + 19;
+        return sumar;
+    }
+    </script>
+    
+</body>
+</html>
