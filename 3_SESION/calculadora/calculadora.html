@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="calculadora.css" rel="stylesheet">
+</head>
+<body style="text-align: center;margin-top: 100px;">
+    <img src="img/calculadora.png" width="150px">
+    <h1>mi extraña calculadora</h1>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div id="fondo_calculadora">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <img src="img/casio.png" width="100%">"
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-6">
+                            <input type="number" class="input_custom" id="campo1"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" class="input_custom" id="campo2"/>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-3">
+                            <button type="button" onclick="sumar()" class="btn btn-outline-secondary btn-l button_custom">+</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" onclick="restar()" class="btn btn-outline-secondary btn-l button_custom">-</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" onclick="multiplicar()" class="btn btn-outline-secondary btn-lg button_custom">x</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" onclick="dividir()" class="btn btn-outline-secondary btn-lg button_custom">/</button>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-6">
+                            <button type="button" onclick="raiz()" class="btn btn-outline-secondary btn-l button_custom">raiz</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" onclick="potencia()" class="btn btn-outline-secondary btn-l button_custom">potencia</button>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-6">
+                            <button type="button" onclick="absoluto()" class="btn btn-outline-secondary btn-l button_custom">absoluto</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" onclick="random()" class="btn btn-outline-secondary btn-l button_custom">random</button>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-12">
+                            <h2 style="color: black; font-weight: bold;">resultado</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="resultado" id="resultado"></div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-4">
+                            <button type="button" onclick="round()" class="btn btn-outline-secondary btn-l button_custom">round</button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" onclick="floor()" class="btn btn-outline-secondary btn-l button_custom">floor</button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" onclick="ceil()" class="btn btn-outline-secondary btn-l button_custom">ceil</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
