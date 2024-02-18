@@ -1,0 +1,10 @@
+body{ background-image: linear-gradient(to right top, #ebebeb, #eaeaef, #e6eaf4, #e0eaf8, #d8ebfc, #d1e4f5, #cbdeef, #c4d7e8, #bdc7d5, #b5b8c2, #aaaaaf, #9d9d9d);
+background-size: contain;}
+
+h1,h2,h3,h4,h5{font-family: 'Protest Riot', sans-serif;}
+
+h1{font-size: 75px;letter-spacing: -0.04em;}
+
+.btn {font-family: 'Protest Riot', sans-serif;color: black;font-size: 2em;}
+
+.superhero{}

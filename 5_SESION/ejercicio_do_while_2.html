@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio do..while</title>
+</head>
+<body>
+
+    <script>
+
+function testLoop(numeroTabla){
+    
+    let tabla = 0;
+    let resultado;
+    
+    do {tabla++;
+        resultado = numeroTabla * tabla;
+        document.write(numeroTabla + ' x ' + tabla + ': ' + resultado + '<br/>')
+    } while (tabla <= 9);
+}
+
+testLoop(7)
+
+    </script>
+    
+</body>
+</html>
