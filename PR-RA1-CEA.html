@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de entrada, nombre y apellido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 10px;
+        }
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Nombre y Apellido</h1>
+    <form id="nameForm">
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div id="output"></div>
+    
+    <script>
+        document.getElementById('nameForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+            
+            // Obtener los valores de los campos de entrada
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            
+            // Mostrar el resultado en la página
+            var outputDiv = document.getElementById('output');
+            outputDiv.textContent = 'Hola, ' + firstName + ' ' + lastName + '!';
+        });
+    </script>
+</body>
+</html>
